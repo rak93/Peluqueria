@@ -1,0 +1,70 @@
+  <label for='estilista'>Estilista</label>
+                        <select name='Estilista' class="form-control">
+                            <option value=""></option>
+                            <?php
+                            // Llamar al método listar() para obtener los estilistas
+                            $daoEsti = new DaoEstilistas($base);
+                            $daoEsti->listar();
+
+                            foreach ($daoEsti->estilistas as $estilista) {
+                                echo "<option value='" . $estilista->__get('IdEstilista') . "'";
+                                if ($esti == $estilista->__get('IdEstilista')) {
+                                    echo " selected ";
+                                }
+                                echo ">" . $estilista->__get('nombre') . "</option>";
+                            }
+                            ?>
+                        </select>
+                        <label for='clinte'>Cliente</label>
+                        <select name='Cliente' class="form-control">
+                            <option value=""></option>
+                            <?php
+                            // Crear una instancia de DaoClientes
+                            $daoCliente = new DaoClientes($base);
+                            $daoCliente->listar();
+
+                            // Iterar sobre los clientes
+                            foreach ($daoCliente->clientes as $cliente) {
+                                echo "<option value='" . $cliente->__get('IdCliente') . "'";
+
+                                // Comprobar si este cliente es el seleccionado
+                                if ($cliente->__get('IdCliente') == $Clien) {
+                                    echo " selected ";
+                                }
+
+                                echo ">" . $cliente->__get('Nombre') . "</option>";
+                            }
+                            ?>
+                        </select>
+
+
+
+
+
+
+
+                        <label for='tratamientos'>Tratamientos</label>
+
+                        <select name='Tratamientos' class="form-control">
+                            <option value=""></option>
+                            <?php
+
+                            // Llamar al método listar() para obtener los tratamientos
+                            $daotratam = new Daotratamientos($base);
+                            $daotratam->listar();
+
+                            foreach ($daotratam->tratamientos as $tratamiento) {
+                                echo "<option value='" . $tratamiento->__get('idTratamiemto') . "'";
+
+                                // Comprobar si este cliente es el seleccionado
+                                if ($tratamiento->__get('nombre')  == $tratam) {
+                                    echo " selected ";
+                                }
+
+                                echo ">" . $tratamiento->__get('nombre') . "</option>";
+                            }  ?>
+
+                        </select>
+                        
+                        <label for='fecha'>fecha</label>
+                        <input type="text" class='form-control' name='fechaReserva' id='fechaReserva'>
