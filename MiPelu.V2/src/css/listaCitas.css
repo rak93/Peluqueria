@@ -1,0 +1,116 @@
+main {
+    background-image: url('./src/img/Inspiración.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 0;
+    color: #87b067; /* Verde pistacho */
+}
+
+.estilista-info, .cliente-info {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9f5ec;
+    margin-bottom: 20px;
+}
+
+.estilista-info h2, .cliente-info h5 {
+    color: #87b067; /* Verde pistacho */
+}
+
+.estilista-info img, .cliente-info img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+th {
+    background-color: #87b067; /* Verde pistacho */
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.select-estilista {
+    width: auto;
+    display: inline-block;
+    border: 1px solid #87b067; /* Verde pistacho */
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    color: #87b067; /* Verde pistacho */
+}
+
+/* Estilos adicionales */
+
+/* Alineación del texto del select */
+.select-estilista {
+    text-align: center;
+}
+
+/* Estilos para el encabezado de la página */
+h4 {
+    color: #6a9367; /* Verde oscuro */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espacio inferior adicional */
+}
+
+/* Estilos para el párrafo de introducción */
+.intro p {
+    margin-bottom: 30px; /* Espacio inferior adicional */
+    color: #6a9367; /* Verde oscuro */
+}
+
+/* Estilos para la tabla de citas */
+.table {
+    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de encabezado y datos */
+th, td {
+    padding: 12px; /* Aumentar el relleno para una apariencia más espaciada */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilos para las filas impares de la tabla */
+tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Color de fondo alternativo */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #6a9367; /* Verde oscuro para el pie de página */
+    color: #fff; /* Texto blanco para mayor contraste */
+    padding: 20px 0; /* Espacio interno en la parte superior e inferior */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #9063c6; /* Violeta */
+    text-decoration: none; /* Quitar subrayado predeterminado */
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+a:hover {
+    color: #6a41c6; /* Violeta más oscuro al pasar el mouse */
+}
+
+.intro p {
+    color: #6a9367; /* Verde oscuro */
+    margin-bottom: 10vh; /* Espacio inferior adicional */
+    margin: 20vw; /* Espacio superior */
+}

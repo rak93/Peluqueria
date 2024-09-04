@@ -1,0 +1,228 @@
+@media only screen and (max-width: 600px) {
+  #imgO{
+    display: none;
+  }
+  .ordenar {
+    margin: 2vw;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+
+  .seccion1 {
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+
+  .image-container1,
+  .image-container2 {
+    display: flex;
+    width: 30vh;
+    margin-right: 2vw;
+  }
+
+  .image-container1 img,
+  .image-container2 img {
+    max-width: 20vw;
+    height: auto;
+    margin-right: 2vw;
+  }
+
+
+  .ordenar{
+    
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  
+  .sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  /* Sombreado plateado y borde para las imágenes */
+.image-container1 img,
+.image-container2 img {
+  box-shadow: 0px 4px 8px rgba(192, 192, 192, 0.5); /* Sombreado plateado */
+  border: 2px solid silver; /* Borde plateado */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s; /* Efecto de transición para el hover */
+}
+
+.image-container1 img:hover,
+.image-container2 img:hover {
+  box-shadow: 0px 8px 16px rgba(192, 192, 192, 0.75); /* Sombreado más intenso al hacer hover */
+}
+}
+
+
+  
+
+  .data-container {
+    background: #ffebee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ /* Fondo para el ID "fondo" */
+#fondo {
+  background-image: url('../img/semirecogido.jpg'); /* Ruta corregida */
+  background-size: cover; /* Cubre todo el fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-position: center; /* Centra la imagen */
+}
+
+.fondo {
+  background-image: url('../img/fondo.jpg'); /* Ruta corregida */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#imgLogo{
+  height: 25vh;
+  width: 60vw;
+  
+}
+
+
+.seccion2 p{
+  color: black;
+}
+
+.login-btn, .register-btn {
+  background-color: white;
+  border: 2px solid #04AA6D;
+  text-decoration: none; /* Quita la subrayación */
+}
+
+.login-btn:hover, .register-btn:hover {
+  background-color: #46a049;
+  color: white;
+}
+/* Estilos generales para los enlaces */
+.login-btn a, .register-btn a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Usa el color del contexto, puede ser personalizado */
+}
+
+/* Evitar cambios de color y subrayado al pasar el ratón */
+.login-btn a:hover,.register-btn a:hover {
+  text-decoration: none; /* Mantener sin subrayado */
+  color: inherit; /* Mantener el color actual */
+}
+/* Estilos CSS para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  /* Ocultar la segunda imagen en pantallas pequeñas */
+  #imgO {
+    display: none;
+  }
+  /* Ajustar el margen de la sección */
+  .ordenar {
+    margin: 2vw;
+  }
+}
+
+/* Estilos CSS para pantallas grandes */
+@media only screen and (min-width: 600px) {
+  /* Estilos para la primera sección */
+  .seccion1 {
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilos para los contenedores de imagen */
+  .image-container1,
+  .image-container2 {
+    display: flex;
+    width: 30vh;
+    margin-right: 2vw;
+  }
+
+  /* Estilos para las imágenes */
+  .image-container1 img,
+  .image-container2 img {
+    max-width: 20vw;
+    height: auto;
+    margin-right: 2vw;
+    border-radius: 5px; /* Añadir bordes redondeados */
+  }
+
+  /* Estilos para la sección "ordenar" */
+  .ordenar {
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse; /* Cambiar la dirección de la columna en pantallas grandes */
+  }
+  
+  /* Estilos para la sección de inicio de sesión */
+  .sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  /* Sombreado y borde para las imágenes */
+  .image-container1 img,
+  .image-container2 img {
+    box-shadow: 0px 4px 8px rgba(192, 192, 192, 0.5); /* Sombreado plateado */
+    border: 2px solid silver; /* Borde plateado */
+    transition: all 0.3s; /* Transición suave al hacer hover */
+  }
+
+  /* Efecto de sombreado más intenso al hacer hover */
+  .image-container1 img:hover,
+  .image-container2 img:hover {
+    box-shadow: 0px 8px 16px rgba(192, 192, 192, 0.75);
+  }
+}
+
+/* Fondo para la sección principal */
+#fondo {
+  background-image: url('../img/semirecogido.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Estilos para la tipografía y los botones */
+h2, h3 {
+  color: #04AA6D; /* Color verde */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida */
+}
+
+p {
+  color: black; /* Color de texto negro */
+  font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+}
+
+/* Estilos para los botones de inicio de sesión */
+.login-btn, .register-btn {
+  background-color: #04AA6D; /* Color de fondo verde */
+  border: 2px solid #04AA6D; /* Borde verde */
+  color: white; /* Texto blanco */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Efecto de cambio de color al hacer hover */
+.login-btn:hover, .register-btn:hover {
+  background-color: #046B4C; /* Color de fondo más oscuro */
+  color: white; /* Texto blanco */
+}

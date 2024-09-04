@@ -1,0 +1,81 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.img-container {
+    position: relative; /* Para permitir que el corazón esté en una posición absoluta */
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+}
+.img-container img {
+    filter: saturate(0.3); /* Imágenes en tonos pastel por defecto */
+    transition: filter 0.3s ease-in-out;
+}
+.img-container:hover img {
+    filter: saturate(1); /* Imágenes a color al pasar el ratón */
+}
+.heart {
+    position: absolute; /* Para que el corazón esté sobre la imagen */
+    top: 10px; /* Posición desde la parte superior */
+    right: 10px; /* Posición desde la parte derecha */
+    width: 24px;
+    height: 24px;
+    fill: none; /* Corazón vacío por defecto */
+    stroke: gray;
+    stroke-width: 2;
+    z-index: 2; /* Asegurarse de que el corazón esté por encima de la imagen */
+}
+.heart.active {
+    fill: red; /* Corazón lleno cuando está activo */
+}
+.lightbox {
+    transition: transform 0.2s;
+}
+.lightbox:active {
+    transform: scale(1.05); /* Efecto de "zoom" al hacer clic */
+}
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .table {
+        display: block; /* Convertir la tabla en bloques */
+    }
+
+    .table tr {
+        display: block; /* Cada fila como un bloque */
+    }
+
+    .table th, .table td {
+        display: block; /* Cada celda como un bloque */
+        width: 100%; /* Hacer que ocupen todo el ancho */
+    }
+
+    /* Ajustar márgenes para separadores de filas */
+    .table tr + tr {
+        margin-top: 10px;
+    }
+}

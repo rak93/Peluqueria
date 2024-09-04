@@ -1,0 +1,94 @@
+/* Estilo para el contenedor de tratamientos */
+.tratamientos-grid {
+    background-color: #66bb6a; /* Verde */
+    padding: 20px; /* Espacio alrededor del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.tratamientos-grid:hover {
+    transform: scale(1.05); /* Aumento al pasar el ratón */
+}
+
+/* Estilo para las tarjetas de tratamientos */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    background-color: #c8e6c9; /* Verde más claro */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumento al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333; /* Color de título oscuro */
+}
+
+.card-text {
+    color: #666; /* Color de texto gris */
+}
+
+/* Estilo para el contenedor de estilistas */
+.esti {
+    background-color: #66bb6a; /* Verde */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px; /* Margen exterior */
+}
+
+/* Estilo para la imagen del estilista */
+.estilista-foto img {
+    border-radius: 50%;
+}
+
+/* Estilo para el select */
+.select-estilista {
+    width: 200px; /* Ancho deseado */
+    background-color: #f3f3f3; /* Fondo gris claro */
+    border: 1px solid #ddd; /* Borde delgado */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interior */
+    color: #000; /* Color de texto negro */
+}
+
+/* Estilo para las opciones del select */
+.select-estilista option {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Color de texto negro */
+}
+
+/* Estilo para el botón */
+.btn-cli {
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interior */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-cli:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar */
+}
+
+/* Estilo para las filas de tratamientos */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-4, .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+}

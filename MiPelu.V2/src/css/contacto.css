@@ -1,0 +1,58 @@
+/* Estilos para los enlaces de correo electrónico y teléfono */
+.info-box a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-box a:hover {
+    color: #0056b3;
+}
+
+/* Estilos para los días y horarios de atención */
+.info-box td {
+    font-weight: bold;
+}
+
+/* Estilos para el botón de enviar */
+.form-box button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2); /* Agregamos un efecto de sombra */
+}
+
+.form-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajustes de espaciado */
+.info-box {
+    margin-bottom: 2rem; /* Espacio entre la información de contacto y el formulario */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Espacio entre los campos del formulario */
+}
+
+@media (max-width: 767px) {
+    /* Media queries para dispositivos móviles */
+    .contacto {
+        flex-direction: column;
+        margin-left: 10vw;
+    }
+
+    .info-box, .form-box {
+        margin: 15vw auto;
+        width: 80%;
+    }
+}
+#form{
+    background-image: url('./src/img/flores.png'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen */
+   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+   background-repeat: no-repeat; /* Evita que la imagen se repita */
+   background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+}

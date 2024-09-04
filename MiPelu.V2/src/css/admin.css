@@ -1,0 +1,129 @@
+/* CSS personalizado para estilos adicionales */
+.fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.legend {
+    font-size: 1.5em;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,  .btn-form{
+    margin-bottom: 10px;
+}
+
+
+
+.select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#formI {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
+  padding:2vw;
+
+}
+
+#labelI {
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#selform {
+    width: 20vw;
+}
+
+#formselect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn-form {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0b943b;
+    transition: transform 0.3s ease-in-out;
+    margin: 3vw;
+}
+
+.btn-form:active {
+    transform: scale(0.90);
+}
+
+.form {
+    background-color: #e0f7e9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.file-upload-btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0b943b;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.file-upload-btn:hover {
+    background-color: #02481f;
+}
+
+.file-upload-btn input[type='file'] {
+    display: none;
+}
+
+
+input[type="text"], .btn-form {
+    font-size: 10px; /* Reducir el tamaño de fuente a la mitad */
+    padding: 2px; /* Reducir el padding a la mitad */
+    margin:0;
+    padding:0;
+}
+
+
+
+/* Estilos CSS para la sección de búsqueda de clientes */
+.formulario-busqueda {
+    display: block; /* Por defecto, se muestra */
+}
+
+/* Media query para ocultar la sección cuando la pantalla tenga menos de 600px de ancho */
+@media (max-width: 600px) {
+    .formulario-busqueda {
+        display: none; /* Se oculta en pantallas pequeñas */
+    }
+    
+}

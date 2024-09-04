@@ -1,0 +1,343 @@
+
+*{
+  z-index: inherit;
+}
+#botonNav {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  #botonNav {
+    display: block;
+    background-color: #7cbb00; /* Verde pistacho */
+    color: #fff; /* Blanco */
+    border: none;
+    font-size: 4vw; /* Tamaño de fuente en unidades vw */
+    padding: 2vw 4vh; /* Padding en unidades vw y vh */
+    cursor: pointer;
+    z-index: 1000; 
+  }
+  #menuNav {
+    display: none;
+    position: absolute;
+    top: 8vh; /* Posición en unidades vh */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Blanco */
+    padding: 2vh 0; /* Padding en unidades vh */
+    text-align: center;
+    z-index: 9999;
+  }
+  #menuNav li {
+    display: block;
+    margin-bottom: 2vh; /* Margen en unidades vh */
+  }
+  #menuNav li:last-child {
+    margin-bottom: 0;
+  }
+  #menuNav li a {
+    color: #7cbb00; /* Verde pistacho */
+    text-decoration: none;
+    padding: 2vh 4vh; /* Padding en unidades vh y vw */
+    display: block;
+    transition: background-color 0.3s;
+  }
+  #menuNav li a:hover {
+    background-color: #c1c1c1; /* Plata */
+    color: #fff; /* Blanco */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  #botonNav {
+    display: block;
+    background-color: #7cbb00; /* Verde pistacho */
+    color: #fff; /* Blanco */
+    border: none;
+    font-size: 4vw; /* Tamaño de fuente en unidades vw */
+    padding: 2vw 4vh; /* Padding en unidades vw y vh */
+    cursor: pointer;
+  }
+  #menuNav {
+    display: none;
+    position: absolute;
+    top: 8vh; /* Posición en unidades vh */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Blanco */
+    padding: 2vh 0; /* Padding en unidades vh */
+    text-align: center;
+  }
+  #menuNav li {
+    display: block;
+    margin-bottom: 2vh; /* Margen en unidades vh */
+  }
+  #menuNav li:last-child {
+    margin-bottom: 0;
+  }
+  #menuNav li a {
+    color: #7cbb00; /* Verde pistacho */
+    text-decoration: none;
+    padding: 2vh 4vh; /* Padding en unidades vh y vw */
+    display: block;
+    transition: background-color 0.3s;
+  }
+  #menuNav li a:hover {
+    background-color: #c1c1c1; /* Plata */
+    color: #fff; /* Blanco */
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  #botonNav {
+    display: block;
+    background-color: #7cbb00; /* Verde pistacho */
+    color: #fff; /* Blanco */
+    border: none;
+    font-size: 4vw; /* Tamaño de fuente en unidades vw */
+    padding: 2vw 4vh; /* Padding en unidades vw y vh */
+    cursor: pointer;
+  }
+  #menuNav {
+    display: none;
+    position: absolute;
+    top: 8vh; /* Posición en unidades vh */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Blanco */
+    padding: 2vh 0; /* Padding en unidades vh */
+    text-align: center;
+  }
+  #menuNav li {
+    display: block;
+    margin-bottom: 2vh; /* Margen en unidades vh */
+  }
+  #menuNav li:last-child {
+    margin-bottom: 0;
+  }
+  #menuNav li a {
+    color: #7cbb00; /* Verde pistacho */
+    text-decoration: none;
+    padding: 2vh 4vh; /* Padding en unidades vh y vw */
+    display: block;
+    transition: background-color 0.3s;
+  }
+  #menuNav li a:hover {
+    background-color: #96e072; /* Otro tono de verde */
+    color: #fff; /* Blanco */
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Estilos para dispositivos de pantalla grande */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  header {
+    background-color: #7cbb00; /* Verde pistacho */
+    color: #c1c1c1; /* Plata */
+    padding: 2vh 4vh; /* Padding en unidades vh y vw */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  main {
+    padding: 4vh; /* Padding en unidades vh */
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  p {
+    color: #555;
+  }
+
+  /* Estilos para el menú */
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 2vh; /* Margen en unidades vh */
+  }
+
+  nav ul li a {
+    color: #555;
+    text-decoration: none;
+    padding: 2vh 4vh; /* Padding en unidades vh y vw */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  nav ul li a:hover {
+    background-color: #96e072; /* Otro tono de verde */
+    color: #fff; /* Blanco */
+    text-decoration: none;
+  }
+
+  /* Ajustar el botón del menú */
+  #botonNav {
+    background-color: #7cbb00; /* Verde pistacho */
+    color: #fff; /* Blanco */
+    border: none;
+    font-size: 3vh; /* Tamaño de fuente en unidades vh */
+    padding: 2vh 4vh; /* Padding en unidades vh y vw */
+    cursor: pointer;
+  }
+
+  /* Eliminar subrayado de todos los enlaces */
+  nav ul li a {
+    text-decoration: none;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info {
+  flex: 1;
+}
+
+.footer-social {
+  flex: 1;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#pCita{
+  display: none;
+}
+/* Estilo base para ambos botones */
+.close, .btn-cli {
+  background-color: #94C973; /* Verde pistacho */
+  color: #00ff00; /* Texto blanco */
+  border: none;
+  padding: 8px 23px; /* Aumenta el padding para hacer los botones más grandes */
+  font-size: 18px; /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a un puntero */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilo al pasar el cursor */
+.close:hover, .btn-cli:hover {
+  background-color: #89b464; /* Color más oscuro al pasar el cursor */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+
+/* Estilo para enlaces dentro de botones */
+.btn-cli {
+  color: white;
+  text-decoration: none;
+  background-color: #7cbb00;
+}
+  @media only screen and (min-width: 600px) {
+           /* Incluye aquí el CSS modificado */
+        #adminMenuAdmin {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 140px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        #adminMenuAdmin li {
+            position: relative;
+        }
+
+        #adminMenuAdmin a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #800080;
+        }
+
+        #adminMenuAdmin a:hover {
+            background-color: #7fff00 ;
+        }
+   
+    
+    }
+         @media only screen and (max-width: 600px) {
+  #adminMenuAdmin {
+       
+            background-color: #ffffff; /* Fondo blanco para mejor contraste */
+          
+        }
+
+        #adminMenuAdmin li {
+            position: relative;
+        }
+
+        #adminMenuAdmin a {
+          
+            color: #333333; /* Color del texto más oscuro */
+            font-weight: bold; /* Texto en negrita para mayor visibilidad */
+        }
+
+        #adminMenuAdmin a:hover {
+            background-color: #007bff; /* Fondo azul al pasar el cursor */
+            color: #ffffff; /* Texto blanco al pasar el cursor */
+         }
+         }
